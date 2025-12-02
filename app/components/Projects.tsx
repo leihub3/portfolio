@@ -11,7 +11,7 @@ const projects = [
   {
     title: 'Multi-Step Form',
     description: 'A modern, interactive multi-step form with smooth animations and validation. Built with React and TypeScript, showcasing advanced form handling and user experience design.',
-    image: '/multi_step.png',
+    image: '/proyects/multi_step.png',
     liveUrl: 'https://multi-step-form-black-nine.vercel.app/',
     githubUrl: '#',
     technologies: ['React', 'TypeScript', 'Tailwind CSS'],
@@ -20,20 +20,11 @@ const projects = [
   {
     title: 'REST Countries API',
     description: 'A comprehensive country information application consuming the REST Countries API. Features dark mode, filtering, and search functionality with a beautiful, responsive design.',
-    image: '/rest_api.png',
+    image: '/proyects/rest_api.png',
     liveUrl: 'https://rest-countries-api-psi-bay.vercel.app/',
     githubUrl: '#',
     technologies: ['React', 'TypeScript', 'API Integration'],
     featured: true,
-  },
-  {
-    title: 'Medical Hub',
-    description: 'Collaborative project utilizing PERN stack with technologies like JWT, Nodemailer, AWS, Multer s3. Integrated payment gateway (Mercado Pago). Work methodology: GIT and SCRUM.',
-    image: '',
-    liveUrl: '#',
-    githubUrl: '#',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS', 'JWT'],
-    featured: false,
   },
   {
     title: 'Video Games Collection',
@@ -43,6 +34,15 @@ const projects = [
     githubUrl: '#',
     technologies: ['React', 'Node.js', 'PostgreSQL', 'Express'],
     featured: false,
+  },
+  {
+    title: 'Isla Verde Bronces Festival',
+    description: 'Official website for the International Isla Verde Bronces Festival - a brass instrument training and improvement course. Features artist profiles, activity schedules, registration system, and event information.',
+    image: '/proyects/ivb.png',
+    liveUrl: 'https://islaverdebronces.com.ar/',
+    githubUrl: '#',
+    technologies: ['WordPress', 'PHP', 'HTML', 'CSS', 'JavaScript'],
+    featured: true,
   },
 ];
 
