@@ -12,3 +12,4 @@ Place your project images here:
 
 The images will be automatically optimized by Next.js Image component.
 
+

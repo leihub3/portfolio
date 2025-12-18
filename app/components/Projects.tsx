@@ -9,14 +9,35 @@ import ProjectViewer from './ProjectViewer';
 
 const projects = [
   {
-    title: 'Multi-Step Form',
-    description: 'A modern, interactive multi-step form with smooth animations and validation. Built with React and TypeScript, showcasing advanced form handling and user experience design.',
-    image: '/proyects/multi_step.png',
-    liveUrl: 'https://multi-step-form-black-nine.vercel.app/',
-    githubUrl: '#',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS'],
+    title: 'Pokémon Explorer',
+    description:
+      'Modern Pokédex built with Next.js 14, TypeScript, and TailwindCSS, featuring infinite scroll, search & type filters, rich Pokémon detail pages with stat charts, abilities and moves, and a Live Battle simulator to compare Pokémon head-to-head, plus dark mode and smooth animations.',
+    image: '/proyects/pokedex.png', // add your screenshot with this name in public/proyects
+    liveUrl: 'https://pokedex-psi-wine-73.vercel.app/',                    // replace with your deployed URL when you have it
+    githubUrl: 'https://github.com/leihub3/pokedex',                  // replace with your GitHub repo URL
+    technologies: [
+      'Next.js 14',
+      'React',
+      'TypeScript',
+      'TailwindCSS',
+      'Zustand',
+      'Framer Motion',
+      'Recharts',
+      'Zod',
+      'PokéAPI',
+    ],
     featured: true,
   },
+  {
+    title: 'AI Story Generator',
+    description:
+      'Full-stack AI Story Creator that lets users generate, save, and manage AI‑powered stories from custom prompts, backed by a Node/Express API and PostgreSQL database on Vercel.',
+    image: '/proyects/story_teller.png',
+    liveUrl: 'https://ai-story-generator-alpha-two.vercel.app/',
+    githubUrl: 'https://github.com/leihub3/ai-story-generator',
+    technologies: ['React', 'Node.js', 'Express', 'PostgreSQL', 'OpenAI'],
+    featured: true,
+  },  
   {
     title: 'REST Countries API',
     description: 'A comprehensive country information application consuming the REST Countries API. Features dark mode, filtering, and search functionality with a beautiful, responsive design.',
@@ -27,14 +48,23 @@ const projects = [
     featured: true,
   },
   {
-    title: 'Video Games Collection',
-    description: 'SPA RESTful about Videogames consuming data from Rawg API. Developed using PERN stack: PostgreSQL, ExpressJs, React and NodeJs.',
-    image: '',
-    liveUrl: '#',
+    title: 'Multi-Step Form',
+    description: 'A modern, interactive multi-step form with smooth animations and validation. Built with React and TypeScript, showcasing advanced form handling and user experience design.',
+    image: '/proyects/multi_step.png',
+    liveUrl: 'https://multi-step-form-black-nine.vercel.app/',
     githubUrl: '#',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Express'],
+    technologies: ['React', 'TypeScript', 'Tailwind CSS'],
     featured: false,
   },
+  // {
+  //   title: 'Video Games Collection',
+  //   description: 'SPA RESTful about Videogames consuming data from Rawg API. Developed using PERN stack: PostgreSQL, ExpressJs, React and NodeJs.',
+  //   image: '',
+  //   liveUrl: '#',
+  //   githubUrl: '#',
+  //   technologies: ['React', 'Node.js', 'PostgreSQL', 'Express'],
+  //   featured: false,
+  // },
   {
     title: 'Isla Verde Bronces Festival',
     description: 'Official website for the International Isla Verde Bronces Festival - a brass instrument training and improvement course. Features artist profiles, activity schedules, registration system, and event information.',
@@ -42,7 +72,7 @@ const projects = [
     liveUrl: 'https://islaverdebronces.com.ar/',
     githubUrl: '#',
     technologies: ['WordPress', 'PHP', 'HTML', 'CSS', 'JavaScript'],
-    featured: true,
+    featured: false,
   },
 ];
 
@@ -83,7 +113,7 @@ export default function Projects() {
             <div className="w-24 h-1 bg-primary-600 mx-auto mb-4"></div>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               A collection of projects showcasing my skills and experience in modern web development.
-              Click "View Live" to see them directly in your browser!
+              Click "Live" to see them directly in your browser!
             </p>
           </motion.div>
 
@@ -129,7 +159,7 @@ export default function Projects() {
                         whileTap={{ scale: 0.95 }}
                       >
                         <Eye className="w-5 h-5" />
-                        View Live
+                        Live
                       </motion.button>
                     </div>
                   )}
@@ -163,7 +193,7 @@ export default function Projects() {
                         whileTap={{ scale: 0.95 }}
                       >
                         <Eye className="w-4 h-4" />
-                        View Live
+                        Live
                       </motion.button>
                     )}
                     <motion.a
